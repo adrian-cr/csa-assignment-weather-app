@@ -1,0 +1,112 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Edu SA Hand';
+  margin: 0;
+  padding: 0;
+  * {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* HEADER */
+header {
+  background-color: #6de2ff;
+  height: 10vh;
+  * {
+    margin: 0;
+  }
+}
+#search-bar {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 6vh;
+  width: calc(15vw + 20vh);;
+}
+#search-bar:has(#search-field:focus) {
+  box-shadow: 0 0 8px 2px #05deab;
+  transition: box-shadow 0.3s;
+}
+#search-field {
+  border: none;
+  border-radius: 10px 0 0 10px;
+  box-sizing: border-box;
+  font-family: 'Edu SA Hand';
+  height: 100%;
+  padding: 5%;
+  width: calc(100% - 20px);
+}
+.text-field:focus {
+  outline: none;
+}
+#search-icon {
+  width: 30px;
+  margin-right: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* MAIN */
+main {
+  align-content: flex-start;
+  align-items: center;
+  background-image: url('./images/background.png');
+  background-size: contain;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  justify-content: center;
+}
+.section {
+  display: block;
+}
+#title {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#main-section {
+  display: block;
+  text-align: center;
+  width: 50%;
+  *:not(hr) {
+    margin: 0;
+  }
+}
+#main-forecast {
+  background-color: #ffffff64;
+  border: solid 2px #6de2ff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0 !important;
+  padding: 5%;
+  width: 100%;
+}
+#forecast-subsection {
+  display: block;
+}
+#forecast-icon {
+  background-color: #91ade6;
+  border: 10px solid #6de2ff;
+  border-radius: 100%;
+  width: 23%;
+}
+#status-label {
+  font-size: 2em;
+}
+#status {
+  color: #898989;
+  font-size: 4em;
+  font-weight: 700;
+}
+#location {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
