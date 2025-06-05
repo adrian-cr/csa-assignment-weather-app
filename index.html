@@ -18,24 +18,39 @@
 </header>
 <main>
   <h1 id="title">☀️&nbsp;<span style="text-decoration: underline;">Your Weather Forecast</span>&nbsp;☀️</h1>
+  <div id="empty-section" style="display: none">
+    <p>Please enter a city name. :)</p>
+  </div>
   <div id="main-section">
     <p>for</p>
-    <p id="location"><span id="city">Guadalajara</span>,&nbsp;&nbsp;<span id="country">Mexico</span></p>
+    <p id="location"><span id="city"></span>,&nbsp;&nbsp;<span id="country"></span></p>
     <div id="main-forecast">
       <img id="forecast-icon" src="./images/clouds.png">
-      <div class="section" id="forecast-subsection">
+      <div class="subsection" id="forecast-subsection">
         <p id="status-label">Status:</p>
-        <p id="status">broken clouds</p>
+        <p id="status"></p>
       </div>
     </div>
-    <hr style="width:50%; border-top: solid 2px #fff">
-    <div id="other-stats">
-
+    <div id="tempreature-wrapper">
+      <img class="temperature-icon" id="main-icon" src="./images/temp_icon.svg">
+      <h2 id="temperature-heading">Temperature</h2>
+      <div id="temperature-subsection">
+        <div id="min-wrapper">
+          <img class="temperature-icon" id="low-icon" src="./images/low_icon.svg">
+          <strong>Min:</strong>&nbsp;<span></span>&nbsp;°C
+        </div>
+        <div id="sensation-wrapper">
+          <img class="temperature-icon" id="feel-icon" src="./images/feel_icon.svg">
+          <strong>Feel:</strong>&nbsp;<span></span>&nbsp;°C
+        </div>
+        <div id="max-wrapper">
+          <img class="temperature-icon" id="high-icon" src="./images/high_icon.svg">
+          <strong>Max:</strong>&nbsp;<span></span>&nbsp;°C
+        </div>
+      </div>
     </div>
   </div>
 </main>
-<footer>
-</footer>
 <script src="index.js"> </script>
 </body>
 </html>

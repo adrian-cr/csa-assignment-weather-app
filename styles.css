@@ -51,6 +51,11 @@ header {
   }
 }
 
+e {
+  color: #525252d3
+}
+
+
 /* MAIN */
 main {
   align-content: flex-start;
@@ -62,7 +67,7 @@ main {
   height: 90vh;
   justify-content: center;
 }
-.section {
+.subsection {
   display: block;
 }
 #title {
@@ -70,6 +75,12 @@ main {
   font-weight: 400;
   margin-bottom: 20px;
   width: 100%;
+}
+#empty-section {
+  background-color: #ffffffc5;
+  border: solid 5px #aaffff;
+  border-radius: 20px;
+  width: 30%;
 }
 #main-section {
   display: block;
@@ -80,9 +91,8 @@ main {
   }
 }
 #main-forecast {
-  background-color: #ffffff64;
-  border: solid 2px #6de2ff;
   border-radius: 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   margin: 20px 0 !important;
@@ -94,7 +104,7 @@ main {
 }
 #forecast-icon {
   background-color: #91ade6;
-  border: 10px solid #6de2ff;
+  /* border: 10px solid #6de2ff; */
   border-radius: 100%;
   width: 23%;
 }
@@ -102,11 +112,35 @@ main {
   font-size: 2em;
 }
 #status {
-  color: #898989;
-  font-size: 4em;
+  font-size: calc(3vw + 10px);
   font-weight: 700;
+  white-space: nowrap;
 }
 #location {
   font-size: 1.5em;
   margin-bottom: 20px;
+}
+#tempreature-wrapper {
+  border-radius: 20px;
+  display: block;
+  height: 10vh;
+  padding: 3%;
+}
+.temperature-icon {
+  display: inline;
+  width: 30px;
+}
+#temperature-heading {
+  display: inline;
+  font-weight: 500;
+  height: 20%;
+  margin: 0;
+}
+#temperature-subsection {
+  height: 80%;
+  justify-content: space-evenly;
+}
+#feel-icon{
+  margin-right: 5px !important;
+  width: 23px;
 }
